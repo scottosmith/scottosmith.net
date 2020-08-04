@@ -8,7 +8,7 @@ import SEO from '../components/seo';
 const Projects = () => {
   return (
     <Layout>
-      <SEO title='Home' />
+      <SEO title='Projects' />
       <CardContainer>
         <Card>
           <h3>Project 1</h3>
