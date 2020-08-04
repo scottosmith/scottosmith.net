@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: 'Scott O. Smith',
-    description: 'My Portfolio',
-    author: 'Scott Smith',
+    description: 'My Personal Development Portfolio',
+    author: 'Scott O. Smith',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
