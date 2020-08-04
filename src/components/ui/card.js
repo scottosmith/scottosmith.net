@@ -10,13 +10,13 @@ const Card = styled.div`
   border-radius: 24px 4px; 
   min-height: 15em;
   margin: 5px;
-  margin-bottom: 1em;
+  margin-bottom: .75em;
   width: 100%;
 
   @media(min-width: 768px) {
     flex: 1 1 0px;
     min-width: 250px;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
 
 `;
