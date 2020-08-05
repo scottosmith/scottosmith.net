@@ -15,7 +15,7 @@ const SiteHeader = styled.div`
   flex-flow: row nowrap;
   justify-content: space-between;
   align-content: center;
-  align-items: baseline;
+  align-items: center;
 `;
 
 const SiteTitle = styled.h1`
@@ -36,7 +36,21 @@ const SiteTitleLink = styled(AniLink)`
   }
 `;
 
+const MobileNavMenu = styled.a`
+  display: inline;
+  color: var(--link-color);
+  fill: currentColor;
+
+  @media(min-width: 768px) {
+    display: none;
+  }
+`;
+
 const Header = ({ siteTitle }) => {
+  const mobileNavMenuHandler = () => {
+    return '';
+  };
+
   return (
     <>
       <SiteHeader>
@@ -48,6 +62,13 @@ const Header = ({ siteTitle }) => {
         <SiteNavContainer>
           <SiteNavItem fade duration={.4} to="/about-me">About Me</SiteNavItem>
           <SiteNavItem fade duration={.4} to="/projects">Projects</SiteNavItem>
+          <MobileNavMenu onClick={mobileNavMenuHandler}>
+            <svg viewBox="0 0 100 80" width="30" height="30">
+              <rect width="100" height="5"></rect>
+              <rect y="30" width="100" height="5"></rect>
+              <rect y="60" width="100" height="5"></rect>
+            </svg>
+          </MobileNavMenu>
         </SiteNavContainer>
       </SiteHeader>
     </>
