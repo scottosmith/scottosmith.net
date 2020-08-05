@@ -2,11 +2,11 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 const Card = styled.div`
-  background: ${props => props.primary ? '#ef8354' : 'transparent'};
-  color: ${props => props.primary ? 'inherit' : '#ef8354'};
+  background: ${props => props.primary ? 'var(--main-color)' : 'transparent'};
+  color: ${props => props.primary ? 'var(--link-color)' : 'var(--main-color)'};
   font-size: 1.2em;
   padding: 2em 1em;
-  border: 2px solid #ef8354;
+  border: 2px solid var(--link-color);
   border-radius: 24px 4px; 
   min-height: 15em;
   margin: 5px;
