@@ -9,7 +9,7 @@ import SEO from '../components/seo';
 
 const AboutImg = styled(Img)`
   margin: 1em auto;
-  border: 1px solid #212121;
+  border: 1.5px solid #212121;
 `;
 
 const AboutMe = () => {
@@ -17,7 +17,7 @@ const AboutMe = () => {
     query {
       placeholderImage: file(relativePath: { eq: "me2.jpg" }) {
         childImageSharp {
-          fluid(maxWidth: 700, quality: 100) {
+          fluid(maxWidth: 800, quality: 100) {
             ...GatsbyImageSharpFluid
             ...GatsbyImageSharpFluidLimitPresentationSize
           }
@@ -31,7 +31,7 @@ const AboutMe = () => {
       <SEO title='About Me' />
       <Card>
         <h2>A little about me:</h2>
-        <AboutImg title='On a boat' fadeIn fluid={data.placeholderImage.childImageSharp.fluid} />
+        <AboutImg title='On a boat' alt='On a boat' fluid={data.placeholderImage.childImageSharp.fluid} />
         <p>
           I take pictures, I travel, I code, I make music. My dog Rhonda is the coolest thing on this here planet Earth! 
           I love my motorcycle, can't get enough of my van, and am working on getting my private pilot license. 
