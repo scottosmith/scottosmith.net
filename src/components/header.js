@@ -1,4 +1,4 @@
-import { Link } from 'gatsby';
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
@@ -22,7 +22,7 @@ const SiteTitle = styled.h1`
   margin: 0;
 `;
 
-const SiteTitleLink = styled(Link)`
+const SiteTitleLink = styled(AniLink)`
   text-decoration: none;
   font-size: .75em;
 
@@ -40,13 +40,13 @@ const Header = ({ siteTitle }) => {
     <>
       <SiteHeader>
         <SiteTitle>
-          <SiteTitleLink to="/">
+          <SiteTitleLink fade duration={.4} to="/">
             {siteTitle}
           </SiteTitleLink>
         </SiteTitle>
         <SiteNavContainer>
-          <SiteNavItem to="/about-me">About Me</SiteNavItem>
-          <SiteNavItem to="/projects">Projects</SiteNavItem>
+          <SiteNavItem fade duration={.4} to="/about-me">About Me</SiteNavItem>
+          <SiteNavItem fade duration={.4} to="/projects">Projects</SiteNavItem>
         </SiteNavContainer>
       </SiteHeader>
     </>
