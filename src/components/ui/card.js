@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const Card = styled.div`
   background: ${props => props.primary ? '#ef8354' : 'transparent'};
-  color: ${props => props.primary ? 'inherit' : '#ef8354'};
+  /* color: ${props => props.primary ? 'inherit' : '#ef8354'}; */
   font-size: 1.2em;
   padding: 2em 1em;
   border: 2px solid #ef8354;

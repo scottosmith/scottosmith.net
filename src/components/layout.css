@@ -1,7 +1,7 @@
 :root {
-  --main-color: #ef8354;
+  --main-color: #fffcf2;
   --bg-color: #303030;
-  --link-color: #fffcf2;
+  --link-color: #ef8354;
 }
 
 html {
@@ -207,6 +207,8 @@ textarea {
 
 
 
+
+
 html {
   font: 112%/1.2em 'Source Sans Pro';
   box-sizing: border-box;
@@ -224,6 +226,7 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--main-color);
+  letter-spacing: .5px;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
