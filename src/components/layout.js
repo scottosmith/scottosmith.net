@@ -41,7 +41,7 @@ const Layout = ({ children }) => {
       <SiteWrapper>
         <main>{children}</main>
         <SiteFooter>
-          © {new Date().getFullYear()}
+          © {new Date().getFullYear()} 
         </SiteFooter>
       </SiteWrapper>
     </>
