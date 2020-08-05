@@ -23,14 +23,14 @@ html {
 body {
   background-color: var(--bg-color);
   color: var(--main-color);  
+  margin: 0;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;
+  font-feature-settings: "kern", "liga", "clig", "calt";
   -moz-font-feature-settings: "kern", "liga", "clig", "calt";
   -ms-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
-  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
