@@ -33,7 +33,7 @@ const AboutMe = () => {
         <h2>A little about me:</h2>
         <AboutImg title='On a boat' alt='On a boat' fluid={data.placeholderImage.childImageSharp.fluid} />
         <p>
-          I take pictures, I travel, I code, I make music. My dog Rhonda is the coolest thing on this here planet Earth! 
+          I take pictures, I travel, I code, I make music. My dog Rhonda is the coolest thing on this here planet Earth. 
           I love my motorcycle, can't get enough of my van, and am working on getting my private pilot license. 
           I'm endlessly scouting the world around me for all the nooks and crannies that the rest of the world hasn't noticed yet.
         </p>

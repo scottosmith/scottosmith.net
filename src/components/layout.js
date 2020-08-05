@@ -22,7 +22,7 @@ const SiteWrapper = styled.div`
 const SiteFooter = styled.footer`
   margin-top: 1em;
   font-weight: bold;
-  color: var(--link-color);
+  text-shadow: 1px 1px #424242;
 `;
 
 const Layout = ({ children }) => {
