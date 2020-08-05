@@ -1,7 +1,7 @@
 import styled from 'styled-components';
-import { Link } from 'gatsby';
+import AniLink from "gatsby-plugin-transition-link/AniLink"
 
-const SiteNavItem = styled(Link)`
+const SiteNavItem = styled(AniLink)`
   font-size: 1.1em;
   margin-left: 1em;
 
