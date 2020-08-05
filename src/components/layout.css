@@ -5,19 +5,55 @@
 }
 
 html {
-  font-family: 'Source Sans Pro';
+  font: 112%/1.2em 'Source Sans Pro';
+  box-sizing: border-box;
+  overflow-y: scroll;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
 }
+* {
+  box-sizing: inherit;
+}
+*:before {
+  box-sizing: inherit;
+}
+*:after {
+  box-sizing: inherit;
+}
 body {
-  margin: 1em 0 0 0;
+  background-color: var(--bg-color);
+  color: var(--main-color);  
+  font-weight: normal;
+  word-wrap: break-word;
+  font-kerning: normal;
+  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
+  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
+  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
+  font-feature-settings: "kern", "liga", "clig", "calt";
+  margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
-  @media(min-width: 768px) {
-    margin: 3em 0 0 0;
+a {
+  color: var(--link-color);
+  text-decoration: none;
+  background-color: transparent;
+  -webkit-text-decoration-skip: objects;
+}
+a:active,
+a:hover {
+  outline-width: 0;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  body {
+    letter-spacing: .25px;
+    margin: 1.5em 0 0 0;
   }
 }
+
 article,
 aside,
 details,
@@ -49,24 +85,6 @@ progress {
 template {
   display: none;
 }
-
-
-
-a {
-  color: var(--link-color);
-  text-decoration: none;
-  background-color: transparent;
-  -webkit-text-decoration-skip: objects;
-}
-a:active,
-a:hover {
-  outline-width: 0;
-  text-decoration: underline;
-}
-
-
-
-
 abbr[title] {
   border-bottom: none;
   text-decoration: underline;
@@ -205,36 +223,6 @@ textarea {
   font: inherit;
 }
 
-
-
-
-
-html {
-  font: 112%/1.2em 'Source Sans Pro';
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
-* {
-  box-sizing: inherit;
-}
-*:before {
-  box-sizing: inherit;
-}
-*:after {
-  box-sizing: inherit;
-}
-body {
-  background-color: var(--bg-color);
-  color: var(--main-color);
-  letter-spacing: .5px;
-  font-weight: normal;
-  word-wrap: break-word;
-  font-kerning: normal;
-  -moz-font-feature-settings: "kern", "liga", "clig", "calt";
-  -ms-font-feature-settings: "kern", "liga", "clig", "calt";
-  -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
-  font-feature-settings: "kern", "liga", "clig", "calt";
-}
 img {
   max-width: 100%;
   margin-left: 0;
