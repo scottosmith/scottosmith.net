@@ -6,7 +6,7 @@ const Card = styled.div`
   color: ${props => props.primary ? 'var(--link-color)' : 'var(--main-color)'};
   font-size: 1.2em;
   padding: 2em 1em;
-  border: 2px solid var(--link-color);
+  border: 2px solid var(--main-color);
   border-radius: 24px 4px; 
   min-height: 15em;
   margin: 5px;
