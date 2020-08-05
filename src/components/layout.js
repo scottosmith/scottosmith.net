@@ -38,8 +38,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <SiteWrapper>
+        <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <SiteFooter>
           © {new Date().getFullYear()} 

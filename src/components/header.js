@@ -9,7 +9,6 @@ import SiteNavItem from '../components/ui/site-nav-item';
 const SiteHeader = styled.div`
   margin-bottom: 1rem;
   margin: 0 auto;
-  max-width: 960px;
   padding: 1.45rem 1.0875rem;
   display: flex;
   flex-flow: row nowrap;
