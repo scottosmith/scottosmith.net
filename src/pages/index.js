@@ -18,7 +18,7 @@ const IndexPage = () => {
           Hello! I'm Scott Smith and this is my portfolio. I'm a full stack developer, but with a particular love of all things front end. Having a direct influence on the user experience and being able to build the interfaces that connect people to services are what keep me going!
         </p>
         <Currents>
-          <h3>Current obsessions:</h3>
+          <h3>Current dev obsessions:</h3>
           <ul>
             <li><a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a></li>
             <li><a href="gatsbyjs.org/" target="_blank" rel="noreferrer">Gatsby</a></li>

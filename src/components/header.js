@@ -25,6 +25,7 @@ const SiteTitle = styled.h1`
 const SiteTitleLink = styled(AniLink)`
   text-decoration: none;
   font-size: .75em;
+  text-shadow: 1px 1px #787878;
 
   @media(min-width: 768px) {
     font-size: 1em;
