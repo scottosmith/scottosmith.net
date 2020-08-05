@@ -54,6 +54,13 @@ a:hover {
   }
 }
 
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 100%;
+  }
+}
+
+/* Everything below is auto-generated w/ Gatsby default starter: */
 article,
 aside,
 details,
@@ -627,8 +634,4 @@ pre tt:before,
 pre tt:after {
   content: "";
 }
-@media only screen and (max-width: 480px) {
-  html {
-    font-size: 100%;
-  }
-}
+
