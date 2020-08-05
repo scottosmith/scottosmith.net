@@ -27,6 +27,9 @@ const IndexPage = () => {
             <li><a href="https://styled-components.com/" target="_blank" rel="noreferrer">Styled Components</a></li>
           </ul>
         </Currents>
+        <p>
+          If you can see this, the site is still being worked on! This <a href="https://jamstack.org/" target="_blank" rel="noreferrer">Jamstack</a> site is built by me using Gatsby and Styled Components, and is continuously deployed by <a href="https://buddy.works/" target="_blank" rel="noreferrer">Buddy</a>.
+        </p>
       </Card>
     </Layout>
   );
