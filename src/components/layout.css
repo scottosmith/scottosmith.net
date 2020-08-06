@@ -3,6 +3,7 @@
   --bg-color: #303030;
   --link-color: #fffcf2;
   --site-width: 960px;
+  --img-border: #2e2e2e;
 }
 
 html {
@@ -34,6 +35,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  line-height: 1.1;
 }
 
 a {

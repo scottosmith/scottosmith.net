@@ -8,14 +8,12 @@ const Card = styled.div`
   padding: 2em 1em;
   border: 2px solid var(--main-color);
   border-radius: 24px 4px; 
-  min-height: 15em;
+  min-height: 10em;
   margin: 5px;
   margin-bottom: .75em;
   width: 100%;
 
   @media(min-width: 768px) {
-    flex: 1 1 0px;
-    min-width: 250px;
     margin-bottom: 1em;
   }
 
