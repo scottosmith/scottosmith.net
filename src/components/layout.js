@@ -15,7 +15,7 @@ import './layout.css';
 
 const SiteWrapper = styled.div`
   margin: 0 auto;
-  max-width: 960px;
+  max-width: var(--site-width);
   padding: 0 1.1rem 1.45rem;
 `;
 

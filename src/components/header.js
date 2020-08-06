@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 import SiteNavContainer from '../components/ui/site-nav-container';
 import SiteNavItem from '../components/ui/site-nav-item';
-import Backdrop from './ui/backdrop';
+import MobileNavMenu from './ui/mobile-nav-menu';
 
 const SiteHeader = styled.div`
   margin-bottom: 1rem;
@@ -17,11 +17,9 @@ const SiteHeader = styled.div`
   align-content: center;
   align-items: center;
 `;
-
 const SiteTitle = styled.h1`
   margin: 0;
 `;
-
 const SiteTitleLink = styled(AniLink)`
   text-decoration: none;
   font-size: .75em;
@@ -35,8 +33,7 @@ const SiteTitleLink = styled(AniLink)`
     text-decoration: none;
   }
 `;
-
-const MobileNavMenu = styled.a`
+const MobileNavMenuToggle = styled.a`
   display: inline;
   color: var(--link-color);
   fill: currentColor;
@@ -48,19 +45,19 @@ const MobileNavMenu = styled.a`
 
 class Header extends Component {
   state = {
-    showMobileNav: false
+    showMobileNavMenu: false
   }
 
-  showMobileNavMenuHandler = () => {
+  mobileNavMenuHandler = () => {
     this.setState(prevState => {
-      return { showMobileNav: !prevState.showMobileNav };
+      return { showMobileNavMenu: !prevState.showMobileNavMenu };
     });
   };
 
   render() {  
     return (
       <>
-        <Backdrop show={this.state.showMobileNav} clicked={this.showMobileNavMenuHandler} />
+        <MobileNavMenu show={this.state.showMobileNavMenu} closed={this.mobileNavMenuHandler} />
         <SiteHeader>
           <SiteTitle>
             <SiteTitleLink fade duration={.4} to="/">
@@ -70,13 +67,13 @@ class Header extends Component {
           <SiteNavContainer>
             <SiteNavItem fade duration={.4} to="/about-me">About Me</SiteNavItem>
             <SiteNavItem fade duration={.4} to="/projects">Projects</SiteNavItem>
-            <MobileNavMenu onClick={this.showMobileNavMenuHandler}>
+            <MobileNavMenuToggle onClick={this.mobileNavMenuHandler}>
               <svg viewBox="0 0 100 80" width="30" height="30">
                 <rect width="100" height="5"></rect>
                 <rect y="30" width="100" height="5"></rect>
                 <rect y="60" width="100" height="5"></rect>
               </svg>
-            </MobileNavMenu>
+            </MobileNavMenuToggle>
           </SiteNavContainer>
         </SiteHeader>
       </>
