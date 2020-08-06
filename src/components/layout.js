@@ -15,7 +15,7 @@ import './layout.css';
 
 const SiteWrapper = styled.div`
   margin: 0 auto;
-  max-width: 960px;
+  max-width: var(--site-width);
   padding: 0 1.1rem 1.45rem;
 `;
 
@@ -38,8 +38,8 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
       <SiteWrapper>
+        <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <SiteFooter>
           © {new Date().getFullYear()} 
