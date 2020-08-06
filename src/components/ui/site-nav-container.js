@@ -9,6 +9,7 @@ const SiteNavContainer = styled.div`
   @media(min-width: 768px) {
     display: flex;
     flex-flow: row nowrap;
+    margin-right: 0;
   }
 `;
 

@@ -10,7 +10,7 @@ import MobileNavMenu from './ui/mobile-nav-menu';
 const SiteHeader = styled.div`
   margin-bottom: 1rem;
   margin: 0 auto;
-  padding: 1.45rem 1.0875rem;
+  padding: 1.45rem 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
@@ -67,14 +67,14 @@ class Header extends Component {
           <SiteNavContainer>
             <SiteNavItem fade duration={.4} to="/about-me">About Me</SiteNavItem>
             <SiteNavItem fade duration={.4} to="/projects">Projects</SiteNavItem>
-            <MobileNavMenuToggle onClick={this.mobileNavMenuHandler}>
+          </SiteNavContainer>
+          <MobileNavMenuToggle onClick={this.mobileNavMenuHandler}>
               <svg viewBox="0 0 100 80" width="30" height="30">
                 <rect width="100" height="5"></rect>
                 <rect y="30" width="100" height="5"></rect>
                 <rect y="60" width="100" height="5"></rect>
               </svg>
             </MobileNavMenuToggle>
-          </SiteNavContainer>
         </SiteHeader>
       </>
     );

@@ -16,7 +16,7 @@ const SideMenu = styled.div`
   background-color: var(--bg-color);
   padding: 32px 16px;
   box-sizing: border-box;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.2s ease-out;
 
   @media(min-width: 768px) {
     display: none;
