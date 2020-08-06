@@ -9,7 +9,7 @@ import SEO from '../components/seo';
 
 const AboutImg = styled(Img)`
   margin: 1em auto;
-  border: 1.5px solid #212121;
+  border: 1.5px solid var(--img-border);
 `;
 
 const AboutMe = () => {

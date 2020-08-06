@@ -14,8 +14,6 @@ const Card = styled.div`
   width: 100%;
 
   @media(min-width: 768px) {
-    flex: 1 1 0px;
-    min-width: 250px;
     margin-bottom: 1em;
   }
 
