@@ -30,9 +30,9 @@ const Projects = () => {
           title="Photo Blog Front End" 
           imgUrl="https://i.imgur.com/Imtllb5.png"
           githubUrl="https://github.com/scottosmith/sosweb-frontend">
-            I have been slowly working on a blog to showcase my photography, building each piece of the stack myself, front-end, API, 
-            database, and server. The front-end is built from an out-of-the-box <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noreferrer">create-react-app</a> instance 
-            and <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">Sass</a>, one my favorite CSS 
+            I have been slowly working on a blog to showcase my photography, building each piece of the stack myself: front-end, API, 
+            database, and server. The front-end is built with React, starting with an out-of-the-box <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noreferrer">create-react-app</a> instance 
+            and using <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">Sass</a>, one my favorite CSS 
             tools ever. Sass makes stylesheets much easier to build and maintain. The syntax just makes sense. Not publicly available 
             quite yet, but soon. I've got photos I want to share that are stacking up!
           </Project>
