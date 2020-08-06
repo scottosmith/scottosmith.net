@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import PropTypes from 'prop-types';
 
 const SiteNavItem = styled(AniLink)`
   display: ${props => props.show ? 'block' : 'none'};
@@ -13,5 +14,13 @@ const SiteNavItem = styled(AniLink)`
     text-shadow: .5px .5px #787878;
   }
 `;
+
+SiteNavItem.propTypes = {
+  show: PropTypes.bool
+}
+
+SiteNavItem.defaultProps = {
+  show: 'false'
+}
 
 export default SiteNavItem;
