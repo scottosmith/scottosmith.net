@@ -1,6 +1,6 @@
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 import PropTypes from 'prop-types';
-import React from 'react';
+import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import SiteNavContainer from '../components/ui/site-nav-container';
@@ -46,35 +46,43 @@ const MobileNavMenu = styled.a`
   }
 `;
 
-const Header = ({ siteTitle }) => {
-  const mobileNavMenuHandler = () => {
-    return '';
+class Header extends Component {
+  state = {
+    showMobileNav: false
+  }
+
+  showMobileNavMenuHandler = () => {
+    this.setState(prevState => {
+      return { showMobileNav: !prevState.showMobileNav };
+    });
   };
 
-  return (
-    <>
-      <Backdrop />
-      <SiteHeader>
-        <SiteTitle>
-          <SiteTitleLink fade duration={.4} to="/">
-            {siteTitle}
-          </SiteTitleLink>
-        </SiteTitle>
-        <SiteNavContainer>
-          <SiteNavItem fade duration={.4} to="/about-me">About Me</SiteNavItem>
-          <SiteNavItem fade duration={.4} to="/projects">Projects</SiteNavItem>
-          <MobileNavMenu onClick={mobileNavMenuHandler}>
-            <svg viewBox="0 0 100 80" width="30" height="30">
-              <rect width="100" height="5"></rect>
-              <rect y="30" width="100" height="5"></rect>
-              <rect y="60" width="100" height="5"></rect>
-            </svg>
-          </MobileNavMenu>
-        </SiteNavContainer>
-      </SiteHeader>
-    </>
-  );
-};
+  render() {  
+    return (
+      <>
+        <Backdrop show={this.state.showMobileNav} clicked={this.showMobileNavMenuHandler} />
+        <SiteHeader>
+          <SiteTitle>
+            <SiteTitleLink fade duration={.4} to="/">
+              {this.props.siteTitle}
+            </SiteTitleLink>
+          </SiteTitle>
+          <SiteNavContainer>
+            <SiteNavItem fade duration={.4} to="/about-me">About Me</SiteNavItem>
+            <SiteNavItem fade duration={.4} to="/projects">Projects</SiteNavItem>
+            <MobileNavMenu onClick={this.showMobileNavMenuHandler}>
+              <svg viewBox="0 0 100 80" width="30" height="30">
+                <rect width="100" height="5"></rect>
+                <rect y="30" width="100" height="5"></rect>
+                <rect y="60" width="100" height="5"></rect>
+              </svg>
+            </MobileNavMenu>
+          </SiteNavContainer>
+        </SiteHeader>
+      </>
+    );
+  }
+}
 
 Header.propTypes = {
   siteTitle: PropTypes.string,
