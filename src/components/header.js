@@ -5,6 +5,7 @@ import styled from 'styled-components';
 
 import SiteNavContainer from '../components/ui/site-nav-container';
 import SiteNavItem from '../components/ui/site-nav-item';
+import Backdrop from './ui/backdrop';
 
 const SiteHeader = styled.div`
   margin-bottom: 1rem;
@@ -52,6 +53,7 @@ const Header = ({ siteTitle }) => {
 
   return (
     <>
+      <Backdrop />
       <SiteHeader>
         <SiteTitle>
           <SiteTitleLink fade duration={.4} to="/">
