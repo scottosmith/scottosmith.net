@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import SiteNavContainer from './site-nav-container';
 import SiteNavItem from './site-nav-item';
@@ -44,5 +45,14 @@ const MobileNavMenu = props => {
     </>
   );
 };
+
+MobileNavMenu.propTypes = {
+  show: PropTypes.bool,
+  closed: PropTypes.func
+}
+
+MobileNavMenu.defaultProps = {
+  show: 'false'
+}
 
 export default MobileNavMenu;
