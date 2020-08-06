@@ -12,8 +12,6 @@ const SiteNavItem = styled(AniLink)`
     margin-left: 1em;
     text-shadow: .5px .5px #787878;
   }
-
-
 `;
 
 export default SiteNavItem;

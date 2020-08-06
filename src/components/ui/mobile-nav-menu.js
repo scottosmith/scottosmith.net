@@ -7,7 +7,7 @@ import Backdrop from './backdrop';
 
 const SideMenu = styled.div`
   position: fixed;
-  width: 200px;
+  width: 160px;
   max-width: 70%;
   height: 100%;
   right: 0;
@@ -31,14 +31,14 @@ const SideMenu = styled.div`
   }
 `;
 
-const MobileNavMenu = (props) => {
+const MobileNavMenu = props => {
   return (
     <>
       <Backdrop show={props.show} clicked={props.closed} />
       <SideMenu className={props.show ? 'open' : 'closed'}>
         <SiteNavContainer>
-          <SiteNavItem fade duration={.4} to="/about-me" show={props.show}>About Me</SiteNavItem>
-          <SiteNavItem fade duration={.4} to="/projects" show={props.show}>Projects</SiteNavItem>
+          <SiteNavItem fade duration={.4} to="/about-me" show={props.show.toString()}>About Me</SiteNavItem>
+          <SiteNavItem fade duration={.4} to="/projects" show={props.show.toString()}>Projects</SiteNavItem>
         </SiteNavContainer>
       </SideMenu>
     </>
