@@ -8,17 +8,24 @@ import SiteNavItem from '../components/ui/site-nav-item';
 import MobileNavMenu from './ui/mobile-nav-menu';
 
 const SiteHeader = styled.div`
-  margin-bottom: 1rem;
   margin: 0 auto;
-  padding: 1.45rem 0;
+  padding: .5rem 0;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
   align-content: center;
   align-items: center;
+
+  @media (min-width: 768px) {
+    padding: 1.45rem 0;
+  }
 `;
 const SiteTitle = styled.h1`
-  margin: 0;
+  margin-bottom: .3em;
+
+  @media (min-width: 768px) {
+    margin-bottom: 0;
+  }
 `;
 const SiteTitleLink = styled(AniLink)`
   text-decoration: none;
@@ -38,7 +45,7 @@ const MobileNavMenuToggle = styled.a`
   color: var(--link-color);
   fill: currentColor;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 `;
