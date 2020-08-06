@@ -3,7 +3,7 @@ import AniLink from "gatsby-plugin-transition-link/AniLink"
 import PropTypes from 'prop-types';
 
 const SiteNavItem = styled(AniLink)`
-  display: ${props => props.show ? 'block' : 'none'};
+  display: ${props => props.show === 'true' ? 'block' : 'none'};
   font-size: 1.5em;
   margin: .5em 0;
 
@@ -16,7 +16,9 @@ const SiteNavItem = styled(AniLink)`
 `;
 
 SiteNavItem.propTypes = {
-  show: PropTypes.bool
+  // This has to be a string to prevent an error 
+  // w/ using AniLink w/ styled-components
+  show: PropTypes.string
 }
 
 SiteNavItem.defaultProps = {
