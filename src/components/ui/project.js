@@ -34,7 +34,7 @@ const Project = props => {
   return (
     <>
       <h3>{props.title}</h3>
-      <ProjectImg src={props.imgUrl} />
+      {props.imgUrl ? <ProjectImg src={props.imgUrl} /> : null}
       <ProjectLinks>
         <a href={props.websiteUrl} target="_blank" rel="noreferrer">Website</a> |
         <a href={props.githubUrl} target="_blank" rel="noreferrer">Github</a>
@@ -47,12 +47,10 @@ const Project = props => {
 };
 
 Project.propTypes = {
-  show: PropTypes.bool,
-  closed: PropTypes.func
-}
-
-Project.defaultProps = {
-  show: 'false'
+  title: PropTypes.string.isRequired,
+  imgUrl: PropTypes.string,
+  websiteUrl: PropTypes.string.isRequired,
+  githubUrl: PropTypes.string.isRequired
 }
 
 export default Project;
