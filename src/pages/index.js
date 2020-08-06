@@ -15,10 +15,12 @@ const IndexPage = () => {
       <SEO title='Home' />
       <Card>
         <p>
-          Hello! I'm Scott Smith and this is my portfolio. I'm a full stack developer, but with a particular love of all things front end. Having a direct influence on the user experience and being able to build the interfaces that connect people to services are what keep me going!
+          Hello! I'm Scott Smith and this is my portfolio. I'm a full stack developer, but with a particular love of all things front end. 
+          Having a direct influence on the user experience and being able to build the interfaces that connect people to services are what 
+          drive me to keep learning, experimenting, and growing. Over 15 years of experience in the development world and there's still so much to learn!
         </p>
         <Currents>
-          <h3>Current dev obsessions:</h3>
+          <h3>My current dev interests:</h3>
           <ul>
             <li><a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a></li>
             <li><a href="gatsbyjs.org/" target="_blank" rel="noreferrer">Gatsby</a></li>
@@ -27,9 +29,6 @@ const IndexPage = () => {
             <li><a href="https://styled-components.com/" target="_blank" rel="noreferrer">Styled Components</a></li>
           </ul>
         </Currents>
-        <p>
-          If you can see this, the site is still being worked on! This <a href="https://jamstack.org/" target="_blank" rel="noreferrer">Jamstack</a> site is built by me using Gatsby and Styled Components, and is continuously deployed by <a href="https://buddy.works/" target="_blank" rel="noreferrer">Buddy</a>.
-        </p>
       </Card>
     </Layout>
   );
