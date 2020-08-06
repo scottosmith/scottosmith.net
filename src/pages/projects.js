@@ -17,14 +17,24 @@ const Projects = () => {
           imgUrl="https://i.imgur.com/2M7oJwY.png" 
           websiteUrl="https://weather.scottosmith.net/" 
           githubUrl="https://github.com/scottosmith/the-weather" >
-            Using React, CSS modules, and the OpenWeatherMap API, I made a basic weather app. 
-            This was fun because I've always wanted to make a custom weather app. I have plans to 
-            adapt this to my flying and hiking needs, to show the specific information I'm always 
-            looking for without all the excess.
+            Using <a href="https://reactjs.org" target="_blank" rel="noreferrer">React</a>,&nbsp; 
+            <a href="https://github.com/css-modules/css-modules" target="_blank" rel="noreferrer">CSS modules</a>, 
+            and the <a href="https://openweathermap.org/api" target="_blank" rel="noreferrer">OpenWeatherMap API</a>, 
+            I made a basic weather app. This was fun because I've always wanted to make a custom weather app. I have 
+            plans to adapt this to my flying and hiking needs, to show the specific information I'm always looking 
+            for without having to weed through all the excess.
           </Project>
         </Card>
         <Card>
-          <h3>Project 2</h3>
+        <Project 
+          title="scottosmith.net" 
+          websiteUrl="https://scottosmith.net/" 
+          githubUrl="https://github.com/scottosmith/scottosmith.net" >
+            Using the <a href="https://github.com/gatsbyjs/gatsby-starter-default" target="_blank" rel="noreferrer">Gatsby default starter</a>, I built my portfolio/personal website 
+            using <a href="https://styled-components.com/" target="_blank" rel="noreferrer">Styled Components</a>, something I am THOROUGHLY enjoying using. 
+            This <a href="https://jamstack.org/" target="_blank" rel="noreferrer">Jamstack</a> site is continuously deployed by&nbsp;
+            <a href="https://buddy.works/" target="_blank" rel="noreferrer">Buddy</a> to my personal DigitalOcean droplet. 
+          </Project>
         </Card>
         <Card>
           <h3>Project 3</h3>
