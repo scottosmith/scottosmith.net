@@ -7,7 +7,7 @@ import Backdrop from './backdrop';
 
 const SideMenu = styled.div`
   position: fixed;
-  width: 280px;
+  width: 200px;
   max-width: 70%;
   height: 100%;
   right: 0;
