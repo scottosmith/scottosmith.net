@@ -23,10 +23,10 @@ module.exports = {
         name: 'Scott O. Smith',
         short_name: 'SOS',
         start_url: '/',
-        background_color: '#663399',
-        theme_color: '#663399',
+        background_color: '#303030',
+        theme_color: '#ef8354',
         display: 'minimal-ui',
-        icon: 'src/images/code.png',
+        icon: 'images/code.png',
       },
     },
     {
