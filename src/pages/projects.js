@@ -22,7 +22,7 @@ const Projects = () => {
           imgUrl="https://i.imgur.com/2M7oJwY.png" 
           websiteUrl="https://weather.scottosmith.net/" 
           githubUrl="https://github.com/scottosmith/the-weather">
-            <Badge><img src="https://app.buddy.works/scottosmith/the-weather/pipelines/pipeline/272198/badge.svg?token=d78b3e44e9a35af85b443334c5224074d02919b8f7c212acb04aff7ea29ff318" /></Badge>
+            <Badge><img src="https://app.buddy.works/scottosmith/the-weather/pipelines/pipeline/272198/badge.svg?token=d78b3e44e9a35af85b443334c5224074d02919b8f7c212acb04aff7ea29ff318" alt="" /></Badge>
             Using <a href="https://reactjs.org" target="_blank" rel="noreferrer">React</a>,&nbsp; 
             <a href="https://github.com/css-modules/css-modules" target="_blank" rel="noreferrer">CSS modules</a>, 
             and the <a href="https://openweathermap.org/api" target="_blank" rel="noreferrer">OpenWeatherMap API</a>, 
@@ -57,7 +57,7 @@ const Projects = () => {
           title="scottosmith.net" 
           websiteUrl="https://scottosmith.net/" 
           githubUrl="https://github.com/scottosmith/scottosmith.net">
-            <Badge><img src="https://app.buddy.works/scottosmith/scottosmith-net/pipelines/pipeline/272191/badge.svg?token=d78b3e44e9a35af85b443334c5224074d02919b8f7c212acb04aff7ea29ff318" /></Badge>
+            <Badge><img src="https://app.buddy.works/scottosmith/scottosmith-net/pipelines/pipeline/272191/badge.svg?token=d78b3e44e9a35af85b443334c5224074d02919b8f7c212acb04aff7ea29ff318" alt="" /></Badge>
             Using the <a href="https://github.com/gatsbyjs/gatsby-starter-default" target="_blank" rel="noreferrer">Gatsby default starter</a>, I built my portfolio/personal website 
             using <a href="https://styled-components.com/" target="_blank" rel="noreferrer">Styled Components</a>, something I am THOROUGHLY enjoying using. 
             This <a href="https://jamstack.org/" target="_blank" rel="noreferrer">Jamstack</a> site is continuously deployed by&nbsp;
