@@ -2,8 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import SiteNav from './site-nav/site-nav';
-import Backdrop from './backdrop';
+import SiteNav from './site-nav';
+import Backdrop from '../backdrop';
 
 const SideMenu = styled.div`
   position: fixed;
@@ -22,7 +22,7 @@ const SideMenu = styled.div`
     display: none;
   }
 
-  &.open {
+  &.open { 
     transform: translateX(0);
   }
 

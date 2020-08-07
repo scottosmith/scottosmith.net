@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import SiteNav from './ui/site-nav/site-nav';
-import MobileNavMenu from './ui/mobile-nav-menu';
+import MobileNavMenu from './ui/site-nav/mobile-site-nav';
 
 const SiteHeader = styled.div`
   margin: 0 auto;

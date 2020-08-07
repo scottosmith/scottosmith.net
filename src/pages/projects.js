@@ -1,8 +1,8 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import CardContainer from '../components/ui/card-container';
-import Card from '../components/ui/card';
+import CardContainer from '../components/ui/cards/card-container';
+import Card from '../components/ui/cards/card';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Project from '../components/ui/project';
