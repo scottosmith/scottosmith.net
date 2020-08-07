@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import SiteNav from './site-nav';
+import SiteNav from './site-nav/site-nav';
 import Backdrop from './backdrop';
 
 const SideMenu = styled.div`

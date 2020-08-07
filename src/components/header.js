@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import SiteNav from '../components/ui/site-nav';
+import SiteNav from './ui/site-nav/site-nav';
 import MobileNavMenu from './ui/mobile-nav-menu';
 
 const SiteHeader = styled.div`
