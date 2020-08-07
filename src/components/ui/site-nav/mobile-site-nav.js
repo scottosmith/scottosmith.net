@@ -2,9 +2,8 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import SiteNavContainer from './site-nav-container';
-import SiteNavItem from './site-nav-item';
-import Backdrop from './backdrop';
+import SiteNav from './site-nav';
+import Backdrop from '../backdrop';
 
 const SideMenu = styled.div`
   position: fixed;
@@ -23,7 +22,7 @@ const SideMenu = styled.div`
     display: none;
   }
 
-  &.open {
+  &.open { 
     transform: translateX(0);
   }
 
@@ -37,10 +36,7 @@ const MobileNavMenu = props => {
     <>
       <Backdrop show={props.show} clicked={props.closed} />
       <SideMenu className={props.show ? 'open' : 'closed'}>
-        <SiteNavContainer>
-          <SiteNavItem fade duration={.4} to="/about-me" show={props.show.toString()}>About Me</SiteNavItem>
-          <SiteNavItem fade duration={.4} to="/projects" show={props.show.toString()}>Projects</SiteNavItem>
-        </SiteNavContainer>
+        <SiteNav show={props.show.toString()} />
       </SideMenu>
     </>
   );

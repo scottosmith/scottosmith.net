@@ -4,12 +4,12 @@ import PropTypes from 'prop-types';
 
 const SiteNavItem = styled(AniLink)`
   display: ${props => props.show === 'true' ? 'block' : 'none'};
-  font-size: 1.5em;
+  font-size: 1.2em;
   margin: .5em 0;
 
   @media(min-width: 768px) {
     display: block;
-    font-size: 1.2em;
+    font-size: 1.25em;
     margin-left: 1em;
     text-shadow: .5px .5px #787878;
   }

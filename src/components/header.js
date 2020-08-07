@@ -3,9 +3,8 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import styled from 'styled-components';
 
-import SiteNavContainer from '../components/ui/site-nav-container';
-import SiteNavItem from '../components/ui/site-nav-item';
-import MobileNavMenu from './ui/mobile-nav-menu';
+import SiteNav from './ui/site-nav/site-nav';
+import MobileNavMenu from './ui/site-nav/mobile-site-nav';
 
 const SiteHeader = styled.div`
   margin: 0 auto;
@@ -71,10 +70,7 @@ class Header extends Component {
               {this.props.siteTitle}
             </SiteTitleLink>
           </SiteTitle>
-          <SiteNavContainer>
-            <SiteNavItem fade duration={.4} to="/about-me">About Me</SiteNavItem>
-            <SiteNavItem fade duration={.4} to="/projects">Projects</SiteNavItem>
-          </SiteNavContainer>
+          <SiteNav />
           <MobileNavMenuToggle onClick={this.mobileNavMenuHandler}>
               <svg viewBox="0 0 100 80" width="30" height="30">
                 <rect width="100" height="5"></rect>
