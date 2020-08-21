@@ -25,6 +25,11 @@ const SiteFooter = styled.footer`
   text-shadow: .5px .5px #737373;
 `;
 
+const SocialLink = styled.span`
+  padding-left: 8px;
+  font-weight: normal;
+`;
+
 const Layout = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
@@ -42,7 +47,7 @@ const Layout = ({ children }) => {
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <SiteFooter>
-          © {new Date().getFullYear()} 
+          © {new Date().getFullYear()} <SocialLink><a href="https://github.com/scottosmith" target="_blank" rel="noreferrer">github</a></SocialLink> <SocialLink><a href="https://www.linkedin.com/in/sos314/" target="_blank" rel="noreferrer">linkedin</a></SocialLink>
         </SiteFooter>
       </SiteWrapper>
     </>
