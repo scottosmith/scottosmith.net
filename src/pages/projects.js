@@ -6,6 +6,7 @@ import Card from '../components/ui/cards/card';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Project from '../components/ui/project';
+import ExLink from '../components/ui/ex-link';
 
 const Badge = styled.div`
   margin: .75em 0;
@@ -23,12 +24,12 @@ const Projects = () => {
           websiteUrl="https://weather.scottosmith.net/" 
           githubUrl="https://github.com/scottosmith/the-weather">
             <Badge><img src="https://app.buddy.works/scottosmith/the-weather/pipelines/pipeline/272198/badge.svg?token=d78b3e44e9a35af85b443334c5224074d02919b8f7c212acb04aff7ea29ff318" alt="" /></Badge>
-            Using <a href="https://reactjs.org" target="_blank" rel="noreferrer">React</a>,&nbsp; 
-            <a href="https://github.com/css-modules/css-modules" target="_blank" rel="noreferrer">CSS modules</a>, 
-            and the <a href="https://openweathermap.org/api" target="_blank" rel="noreferrer">OpenWeatherMap API</a>, 
+            Using <ExLink url="https://reactjs.org">React</ExLink>,&nbsp; 
+            <ExLink url="https://github.com/css-modules/css-modules">CSS modules</ExLink>, 
+            and the <ExLink url="https://openweathermap.org/api">OpenWeatherMap API</ExLink>, 
             I made a basic weather app. This was fun because I've always wanted to make a custom weather app. I have 
             plans to adapt this to my flying and hiking needs, to show the specific information I'm always looking 
-            for without having to weed through all the excess. I use <a href="https://buddy.works/" target="_blank" rel="noreferrer">Buddy</a> as my CI/CD and host it on my personal <a href="https://www.digitalocean.com/" target="_blank" rel="noreferrer">DigitalOcean</a> droplet.
+            for without having to weed through all the excess. I use <ExLink url="https://buddy.works/">Buddy</ExLink> as my CI/CD and host it on my personal <ExLink url="https://www.digitalocean.com/">DigitalOcean</ExLink> droplet.
           </Project>
         </Card>
         <Card>
@@ -37,8 +38,8 @@ const Projects = () => {
           imgUrl="https://i.imgur.com/Imtllb5.png"
           githubUrl="https://github.com/scottosmith/sosweb-frontend">
             I have been slowly working on a blog to showcase my photography, building each piece of the stack myself: front-end, API, 
-            database, and server. The front-end is built with React, starting with an out-of-the-box <a href="https://github.com/facebook/create-react-app" target="_blank" rel="noreferrer">create-react-app</a> instance 
-            and using <a href="https://sass-lang.com/" target="_blank" rel="noreferrer">Sass</a>, one my favorite CSS 
+            database, and server. The front-end is built with React, starting with an out-of-the-box <ExLink url="https://github.com/facebook/create-react-app">create-react-app</ExLink> instance 
+            and using <ExLink url="https://sass-lang.com/">Sass</ExLink>, one my favorite CSS 
             tools ever. Sass makes stylesheets much easier to build and maintain. The syntax just makes sense. Not publicly available 
             quite yet, but soon. I've got photos I want to share that are stacking up!
           </Project>
@@ -47,8 +48,8 @@ const Projects = () => {
           <Project 
           title="Photo Blog Back End" 
           githubUrl="https://github.com/scottosmith/sosweb-api">
-            To learn some new back end skills and keep the "full stack" part of my title current, I built a <a href="https://graphql.org/" target="_blank" rel="noreferrer">GraphQL</a> API 
-            for my blog, powered by a <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer">MongoDB</a> database. The more I read about GraphQL and NoSQL DBs, the more I 
+            To learn some new back end skills and keep the "full stack" part of my title current, I built a <ExLink url="https://graphql.org/">GraphQL</ExLink> API 
+            for my blog, powered by a <ExLink url="https://www.mongodb.com/">MongoDB</ExLink> database. The more I read about GraphQL and NoSQL DBs, the more I 
             wanted to build with them so I could understand them better and experience the differences from other tech I've worked with like REST APIs and SQL DBs.
           </Project>
         </Card>
@@ -58,10 +59,10 @@ const Projects = () => {
           websiteUrl="https://scottosmith.net/" 
           githubUrl="https://github.com/scottosmith/scottosmith.net">
             <Badge><img src="https://app.buddy.works/scottosmith/scottosmith-net/pipelines/pipeline/272191/badge.svg?token=d78b3e44e9a35af85b443334c5224074d02919b8f7c212acb04aff7ea29ff318" alt="" /></Badge>
-            Using the <a href="https://github.com/gatsbyjs/gatsby-starter-default" target="_blank" rel="noreferrer">Gatsby default starter</a>, I built my portfolio/personal website 
-            using <a href="https://styled-components.com/" target="_blank" rel="noreferrer">Styled Components</a>, something I am THOROUGHLY enjoying using. 
-            This <a href="https://jamstack.org/" target="_blank" rel="noreferrer">Jamstack</a> site is continuously deployed by&nbsp;
-            <a href="https://buddy.works/" target="_blank" rel="noreferrer">Buddy</a> to my personal <a href="https://www.digitalocean.com/" target="_blank" rel="noreferrer">DigitalOcean</a> droplet. 
+            Using the <ExLink url="https://github.com/gatsbyjs/gatsby-starter-default">Gatsby default starter</ExLink>, I built my portfolio/personal website 
+            using <ExLink url="https://styled-components.com/">Styled Components</ExLink>, something I am THOROUGHLY enjoying using. 
+            This <ExLink url="https://jamstack.org/">Jamstack</ExLink> site is continuously deployed by&nbsp;
+            <ExLink url="https://buddy.works/">Buddy</ExLink> to my personal <ExLink url="https://www.digitalocean.com/">DigitalOcean</ExLink> droplet. 
           </Project>
         </Card>
       </CardContainer>
