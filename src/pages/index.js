@@ -36,9 +36,13 @@ const IndexPage = () => {
           and styles that really get the point across.
         </p>
         <PaddedList>
-          <h3>Here are a few teach teachers that inspire me:</h3>
+          <h3>A few tech teachers that inspire me:</h3>
           <ul>
-            <li><ExLink url="https://mobile.twitter.com/dan_abramov">Dan Abramov</ExLink></li>
+            <li><ExLink url="https://nerdy.dev/">Adam Argyle</ExLink></li>
+            <li><ExLink url="https://compiled.blog/">Emma Bostian</ExLink></li>
+            <li><ExLink url="https://angiejones.tech/">Angie Jones</ExLink></li>
+            <li><ExLink url="https://twitter.com/dan_abramov">Dan Abramov</ExLink></li>
+            <li><ExLink url="https://www.jamesqquick.com/">James Q. Quick</ExLink></li>
           </ul>
         </PaddedList>
       </Card>
