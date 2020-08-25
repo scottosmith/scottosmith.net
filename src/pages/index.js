@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Card from '../components/ui/cards/card';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import ExLink from '../components/ui/ex-link';
 
 const PaddedList = styled.div`
   margin-left: .5em;
@@ -22,11 +23,11 @@ const IndexPage = () => {
         <PaddedList>
           <h3>Things currently occupying the techy part of my brain:</h3>
           <ul>
-            <li><a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a></li>
-            <li><a href="https://gatsbyjs.com/" target="_blank" rel="noreferrer">Gatsby</a></li>
-            <li><a href="https://graphql.org/" target="_blank" rel="noreferrer">GraphQL</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations" target="_blank" rel="noreferrer">CSS Animations</a></li>
-            <li><a href="https://styled-components.com/" target="_blank" rel="noreferrer">Styled Components</a></li>
+            <li><ExLink url="https://reactjs.org/">React</ExLink></li>
+            <li><ExLink url="https://gatsbyjs.com/">Gatsby</ExLink></li>
+            <li><ExLink url="https://graphql.org/">GraphQL</ExLink></li>
+            <li><ExLink url="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations">CSS Animations</ExLink></li>
+            <li><ExLink url="https://styled-components.com/">Styled Components</ExLink></li>
           </ul>
         </PaddedList>
         <p>
@@ -37,7 +38,7 @@ const IndexPage = () => {
         <PaddedList>
           <h3>Here are a few teach teachers that inspire me:</h3>
           <ul>
-            <li><a href="https://mobile.twitter.com/dan_abramov">Dan Abramov</a></li>
+            <li><ExLink url="https://mobile.twitter.com/dan_abramov">Dan Abramov</ExLink></li>
           </ul>
         </PaddedList>
       </Card>
