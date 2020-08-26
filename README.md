@@ -1,4 +1,4 @@
-## scottosmith.net [![buddy pipeline](https://app.buddy.works/scottosmith/scottosmith-net/pipelines/pipeline/272191/badge.svg?token=d78b3e44e9a35af85b443334c5224074d02919b8f7c212acb04aff7ea29ff318 "buddy pipeline")](https://app.buddy.works/scottosmith/scottosmith-net/pipelines/pipeline/272191)
+## scottosmith.net [![Netlify Status](https://api.netlify.com/api/v1/badges/6a94d2f1-e56e-4004-9d37-b1736cae1f7a/deploy-status)](https://app.netlify.com/sites/scottosmith/deploys)
 
 ### [ScottOSmith.net](https://scottosmith.net)
 
