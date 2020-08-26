@@ -4,8 +4,9 @@ import styled from 'styled-components';
 import Card from '../components/ui/cards/card';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import ExLink from '../components/ui/ex-link';
 
-const Currents = styled.div`
+const PaddedList = styled.div`
   margin-left: .5em;
 `;
 
@@ -17,18 +18,33 @@ const IndexPage = () => {
         <p>
           Hello! I'm Scott Smith and this is my portfolio. I'm a full stack developer, but with a particular love of all things front end. 
           Having a direct influence on the user experience and being able to build the interfaces that connect people to services are what 
-          drive me to keep learning, experimenting, and growing. Over 15 years of experience in the development world and there's still so much to learn!
+          drive me to keep learning, experimenting, and growing. Over 15 years in the development world and there's still so much to learn!
         </p>
-        <Currents>
-          <h3>My current dev interests:</h3>
+        <PaddedList>
+          <h3>Things currently occupying the techy part of my brain:</h3>
           <ul>
-            <li><a href="https://reactjs.org/" target="_blank" rel="noreferrer">React</a></li>
-            <li><a href="gatsbyjs.org/" target="_blank" rel="noreferrer">Gatsby</a></li>
-            <li><a href="https://graphql.org/" target="_blank" rel="noreferrer">GraphQL</a></li>
-            <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations" target="_blank" rel="noreferrer">CSS Animations</a></li>
-            <li><a href="https://styled-components.com/" target="_blank" rel="noreferrer">Styled Components</a></li>
+            <li><ExLink url="https://reactjs.org/">React</ExLink></li>
+            <li><ExLink url="https://gatsbyjs.com/">Gatsby</ExLink></li>
+            <li><ExLink url="https://graphql.org/">GraphQL</ExLink></li>
+            <li><ExLink url="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations">CSS Animations</ExLink></li>
+            <li><ExLink url="https://styled-components.com/">Styled Components</ExLink></li>
           </ul>
-        </Currents>
+        </PaddedList>
+        <p>
+          As you can see, I don't have a blog. I know, right? Very not 2020... but as much as I love to write and share knowledge, it isn't my forte, 
+          and that's ok! Everything is not for everyone. There are some amazing people out there in the world who are better skilled at teaching methods 
+          and styles that really get the point across.
+        </p>
+        <PaddedList>
+          <h3>A few tech teachers that inspire me:</h3>
+          <ul>
+            <li><ExLink url="https://nerdy.dev/">Adam Argyle</ExLink></li>
+            <li><ExLink url="https://compiled.blog/">Emma Bostian</ExLink></li>
+            <li><ExLink url="https://angiejones.tech/">Angie Jones</ExLink></li>
+            <li><ExLink url="https://twitter.com/dan_abramov">Dan Abramov</ExLink></li>
+            <li><ExLink url="https://www.jamesqquick.com/">James Q. Quick</ExLink></li>
+          </ul>
+        </PaddedList>
       </Card>
     </Layout>
   );
