@@ -1,5 +1,4 @@
 import React from 'react';
-import styled from 'styled-components';
 
 import CardContainer from '../components/ui/cards/card-container';
 import Card from '../components/ui/cards/card';
@@ -7,10 +6,6 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import Project from '../components/ui/project';
 import ExLink from '../components/ui/ex-link';
-
-const Badge = styled.div`
-  margin: .75em 0;
-`;
 
 const Projects = () => {
   return (
@@ -23,7 +18,6 @@ const Projects = () => {
           imgUrl="https://i.imgur.com/2M7oJwY.png" 
           websiteUrl="https://weather.scottosmith.net/" 
           githubUrl="https://github.com/scottosmith/the-weather">
-            <Badge><img src="https://app.buddy.works/scottosmith/the-weather/pipelines/pipeline/272198/badge.svg?token=d78b3e44e9a35af85b443334c5224074d02919b8f7c212acb04aff7ea29ff318" alt="" /></Badge>
             Using <ExLink url="https://reactjs.org">React</ExLink>,&nbsp; 
             <ExLink url="https://github.com/css-modules/css-modules">CSS modules</ExLink>, 
             and the <ExLink url="https://openweathermap.org/api">OpenWeatherMap API</ExLink>, 
@@ -58,7 +52,6 @@ const Projects = () => {
           title="scottosmith.net" 
           websiteUrl="https://scottosmith.net/" 
           githubUrl="https://github.com/scottosmith/scottosmith.net">
-            <Badge><img src="https://app.buddy.works/scottosmith/scottosmith-net/pipelines/pipeline/272191/badge.svg?token=d78b3e44e9a35af85b443334c5224074d02919b8f7c212acb04aff7ea29ff318" alt="" /></Badge>
             Using the <ExLink url="https://github.com/gatsbyjs/gatsby-starter-default">Gatsby default starter</ExLink>, I built my portfolio/personal website 
             using <ExLink url="https://styled-components.com/">Styled Components</ExLink>, something I am THOROUGHLY enjoying using. 
             This <ExLink url="https://jamstack.org/">Jamstack</ExLink> site is continuously deployed and hosted by&nbsp;
