@@ -12,6 +12,7 @@ import styled from 'styled-components';
 
 import Header from './header'
 import './layout.css';
+import ExLink from '../components/ui/ex-link';
 
 const SiteWrapper = styled.div`
   margin: 0 auto;
@@ -25,7 +26,7 @@ const SiteFooter = styled.footer`
   text-shadow: .5px .5px #737373;
 `;
 
-const SocialLink = styled.span`
+const PaddedLink = styled.span`
   padding-left: 8px;
   font-weight: normal;
 `;
@@ -47,7 +48,7 @@ const Layout = ({ children }) => {
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <SiteFooter>
-          © {new Date().getFullYear()} <SocialLink><a href="https://github.com/scottosmith" target="_blank" rel="noreferrer">github</a></SocialLink> <SocialLink><a href="https://www.linkedin.com/in/sos314/" target="_blank" rel="noreferrer">linkedin</a></SocialLink>
+          © {new Date().getFullYear()} <PaddedLink><ExLink url="https://github.com/scottosmith">github</ExLink></PaddedLink> <PaddedLink><ExLink url="https://www.linkedin.com/in/sos314/">linkedin</ExLink></PaddedLink>
         </SiteFooter>
       </SiteWrapper>
     </>
