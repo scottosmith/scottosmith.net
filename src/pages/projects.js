@@ -29,7 +29,7 @@ const Projects = () => {
             and the <ExLink url="https://openweathermap.org/api">OpenWeatherMap API</ExLink>, 
             I made a basic weather app. This was fun because I've always wanted to make a custom weather app. I have 
             plans to adapt this to my flying and hiking needs, to show the specific information I'm always looking 
-            for without having to weed through all the excess. I use <ExLink url="https://buddy.works/">Buddy</ExLink> as my CI/CD and host it on my personal <ExLink url="https://www.digitalocean.com/">DigitalOcean</ExLink> droplet.
+            for without having to weed through all the excess. I use <ExLink url="https://www.netlify.com/">Netlify</ExLink> to build/deploy/host this project.
           </Project>
         </Card>
         <Card>
@@ -61,8 +61,8 @@ const Projects = () => {
             <Badge><img src="https://app.buddy.works/scottosmith/scottosmith-net/pipelines/pipeline/272191/badge.svg?token=d78b3e44e9a35af85b443334c5224074d02919b8f7c212acb04aff7ea29ff318" alt="" /></Badge>
             Using the <ExLink url="https://github.com/gatsbyjs/gatsby-starter-default">Gatsby default starter</ExLink>, I built my portfolio/personal website 
             using <ExLink url="https://styled-components.com/">Styled Components</ExLink>, something I am THOROUGHLY enjoying using. 
-            This <ExLink url="https://jamstack.org/">Jamstack</ExLink> site is continuously deployed by&nbsp;
-            <ExLink url="https://buddy.works/">Buddy</ExLink> to my personal <ExLink url="https://www.digitalocean.com/">DigitalOcean</ExLink> droplet. 
+            This <ExLink url="https://jamstack.org/">Jamstack</ExLink> site is continuously deployed and hosted by&nbsp;
+            <ExLink url="https://www.netlify.com/">Netlify</ExLink>. 
           </Project>
         </Card>
       </CardContainer>
