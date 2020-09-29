@@ -38,13 +38,12 @@ const IntroSection = styled.div`
   }
 
   p {
-    margin: 0 1rem;
+    margin: 0;
     text-align: center;
 
     @media (min-width: 425px) {
-      text-align: left;
-      margin-right: 0;
-      margin-left: 2rem;
+      text-align: right;
+      margin-left: 1rem;
     }
   }
 `;
