@@ -34,6 +34,7 @@ const IntroSection = styled.div`
 
   @media (min-width: 425px) {
     flex-flow: row nowrap;
+    margin-right: 0;
   }
 
   p {
@@ -41,7 +42,9 @@ const IntroSection = styled.div`
     text-align: center;
 
     @media (min-width: 425px) {
-      text-align: right;
+      text-align: left;
+      margin-right: 0;
+      margin-left: 2rem;
     }
   }
 `;
