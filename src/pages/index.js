@@ -1,4 +1,6 @@
 import React from 'react';
+import { useStaticQuery, graphql } from "gatsby"
+import Img from 'gatsby-image'
 import styled from 'styled-components';
 
 import Card from '../components/ui/cards/card';
@@ -10,33 +12,82 @@ const PaddedList = styled.div`
   margin-left: .5em;
 `;
 
+const Avatar = styled(Img)`
+  border-radius: 50%;
+  width: 200px;
+  border: 1.5px solid var(--img-border);
+  margin-bottom: 1rem;
+
+  @media (min-width: 425px) {
+    margin-bottom: auto;
+  }
+`;
+
+const IntroSection = styled.div`
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  @media (min-width: 425px) {
+    flex-flow: row nowrap;
+    margin-right: 0;
+  }
+
+  p {
+    margin: 0;
+    text-align: center;
+
+    @media (min-width: 425px) {
+      text-align: right;
+      margin-left: 1rem;
+    }
+  }
+`;
+
 const IndexPage = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: file(relativePath: { eq: "me.png" }) {
+        childImageSharp {
+          fluid(maxWidth: 200, quality: 100) {
+            ...GatsbyImageSharpFluid
+            ...GatsbyImageSharpFluidLimitPresentationSize
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Layout>
       <SEO title='Home' />
       <Card>
-        <p>
-          Hello! I'm Scott Smith and this is my portfolio. I'm a full stack developer, but with a particular love of all things front end. 
-          Having a direct influence on the user experience and being able to build the interfaces that connect people to services are what 
-          drive me to keep learning, experimenting, and growing. Over 15 years in the development world and there's still so much to learn!
-        </p>
+        <IntroSection>
+          <div>
+            <Avatar title='Me!' alt='Me!' fluid={data.placeholderImage.childImageSharp.fluid} />
+          </div>
+          <p>
+            Hello! I'm Scott Smith and this is my portfolio. I'm a full stack developer, but with a particular love of all things front end. 
+            Having a direct influence on the user experience and being able to build the interfaces that connect people to services are what 
+            drive me to keep learning, experimenting, and growing. Over 15 years in the development world and there's still so much to learn!
+          </p>
+        </IntroSection>
         <PaddedList>
-          <h3>Things currently occupying the techy part of my brain:</h3>
+          <h3>Things I've been getting more familiar with:</h3>
           <ul>
-            <li><ExLink url="https://reactjs.org/">React</ExLink></li>
-            <li><ExLink url="https://gatsbyjs.com/">Gatsby</ExLink></li>
+            <li><ExLink url="https://nextjs.org/">Next.js</ExLink></li>
             <li><ExLink url="https://graphql.org/">GraphQL</ExLink></li>
-            <li><ExLink url="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations">CSS Animations</ExLink></li>
             <li><ExLink url="https://styled-components.com/">Styled Components</ExLink></li>
+            <li><ExLink url="https://tailwindcss.com/">Tailwind CSS</ExLink></li>
+            <li><ExLink url="https://fujifilm-x.com/global/products/cameras/x100f/">My Fuji X100F</ExLink></li>
           </ul>
         </PaddedList>
-        <p>
-          As you can see, I don't have a blog. I know, right? Very not 2020... but as much as I love to write and share knowledge, it isn't my forte, 
-          and that's ok! Everything is not for everyone. There are some amazing people out there in the world who are better skilled at teaching methods 
-          and styles that really get the point across.
-        </p>
         <PaddedList>
-          <h3>A few tech teachers that inspire me:</h3>
+          <h3>A few inspirational tech people:</h3>
           <ul>
             <li><ExLink url="https://nerdy.dev/">Adam Argyle</ExLink></li>
             <li><ExLink url="https://compiled.blog/">Emma Bostian</ExLink></li>
