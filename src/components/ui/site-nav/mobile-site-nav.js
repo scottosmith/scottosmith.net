@@ -32,7 +32,7 @@ const SideMenu = styled.div`
   }
 `;
 
-const MobileNavMenu = props => {
+const MobileSiteNav = props => {
   return (
     <>
       <Backdrop show={props.show} clicked={props.closed} />
@@ -43,13 +43,13 @@ const MobileNavMenu = props => {
   );
 };
 
-MobileNavMenu.propTypes = {
+MobileSiteNav.propTypes = {
   show: PropTypes.bool,
   closed: PropTypes.func
 }
 
-MobileNavMenu.defaultProps = {
+MobileSiteNav.defaultProps = {
   show: 'false'
 }
 
-export default MobileNavMenu;
+export default MobileSiteNav;
