@@ -71,7 +71,7 @@ const IndexPage = () => {
             <Avatar title='Me!' alt='Me!' fluid={data.placeholderImage.childImageSharp.fluid} />
           </div>
           <p>
-            I'm Scott Smith: a full stack developer with a emphasis on the front end. 
+            I'm Scott Smith: a full stack developer with an emphasis on the front end. 
             Having a direct influence on the user experience and being able to build the interfaces that connect people to services are what 
             drive me to keep learning, experimenting, and growing. Over 15 years in the development world and there's always more to learn!
           </p>
