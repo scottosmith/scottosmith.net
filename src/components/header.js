@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import SiteNav from './ui/site-nav/site-nav';
-import MobileNavMenu from './ui/site-nav/mobile-site-nav';
+import MobileSiteNav from './ui/site-nav/mobile-site-nav';
 
 const SiteHeader = styled.div`
   margin: 0 auto;
@@ -63,7 +63,7 @@ class Header extends Component {
   render() {  
     return (
       <>
-        <MobileNavMenu show={this.state.showMobileNavMenu} closed={this.mobileNavMenuHandler} />
+        <MobileSiteNav show={this.state.showMobileNavMenu} closed={this.mobileNavMenuHandler} />
         <SiteHeader>
           <SiteTitle>
             <SiteTitleLink fade duration={.4} to="/">
@@ -72,12 +72,12 @@ class Header extends Component {
           </SiteTitle>
           <SiteNav />
           <MobileNavMenuToggle onClick={this.mobileNavMenuHandler}>
-              <svg viewBox="0 0 100 80" width="30" height="30">
-                <rect width="100" height="5"></rect>
-                <rect y="30" width="100" height="5"></rect>
-                <rect y="60" width="100" height="5"></rect>
-              </svg>
-            </MobileNavMenuToggle>
+            <svg viewBox="0 0 100 80" width="30" height="30">
+              <rect width="100" height="5"></rect>
+              <rect y="30" width="100" height="5"></rect>
+              <rect y="60" width="100" height="5"></rect>
+            </svg>
+          </MobileNavMenuToggle>
         </SiteHeader>
       </>
     );

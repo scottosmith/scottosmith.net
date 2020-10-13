@@ -36,16 +36,20 @@ const Section = styled.div`
 
   p {
     margin: 0;
-    text-align: center;
-
-    @media (min-width: 768px) {
-      text-align: left;
-    }
   }
 `;
 
-const IntroTxt = styled.span`
-  font-size: 3rem;
+const IntroTxt = styled.div`
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  display: block;
+
+  @media (min-width: 768px) {
+      font-size: 3rem;
+      text-align: left;
+      display: inline-block;
+    }
 `;
 
 const IndexPage = () => {
