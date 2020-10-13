@@ -13,7 +13,7 @@ const PaddedList = styled.div`
 `;
 
 const Avatar = styled(Img)`
-  border-radius: 50%;
+  border-radius: 24px 4px;
   width: 200px;
   border: 1.5px solid var(--img-border);
   margin-bottom: 1rem;
@@ -42,8 +42,8 @@ const IntroSection = styled.div`
     text-align: center;
 
     @media (min-width: 425px) {
-      text-align: right;
-      margin-left: 1rem;
+      text-align: left;
+      margin-left: 1.5rem;
     }
   }
 `;
