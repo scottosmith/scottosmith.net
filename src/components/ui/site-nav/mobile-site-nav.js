@@ -37,7 +37,7 @@ const MobileNavMenu = props => {
     <>
       <Backdrop show={props.show} clicked={props.closed} />
       <SideMenu className={props.show ? 'open' : 'closed'}>
-        <SiteNav show={props.show} />
+        <SiteNav itemClicked={props.closed} show={props.show} />
       </SideMenu>
     </>
   );

@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import styled from 'styled-components';
 
 import SiteNav from './ui/site-nav/site-nav';
-import MobileNavMenu from './ui/site-nav/mobile-site-nav';
+import MobileSiteNav from './ui/site-nav/mobile-site-nav';
 
 const SiteHeader = styled.div`
   margin: 0 auto;
@@ -63,7 +63,7 @@ class Header extends Component {
   render() {  
     return (
       <>
-        <MobileNavMenu show={this.state.showMobileNavMenu} closed={this.mobileNavMenuHandler} />
+        <MobileSiteNav show={this.state.showMobileNavMenu} closed={this.mobileNavMenuHandler} />
         <SiteHeader>
           <SiteTitle>
             <SiteTitleLink fade duration={.4} to="/">
