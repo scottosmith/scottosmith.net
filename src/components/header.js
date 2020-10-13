@@ -1,6 +1,6 @@
 import AniLink from 'gatsby-plugin-transition-link/AniLink'
 import PropTypes from 'prop-types';
-import React, { Component } from 'react';
+import React, { useState } from 'react';
 import styled from 'styled-components';
 
 import SiteNav from './ui/site-nav/site-nav';
@@ -39,7 +39,7 @@ const SiteTitleLink = styled(AniLink)`
     text-decoration: none;
   }
 `;
-const MobileNavMenuToggle = styled.a`
+const MobileSiteNavToggle = styled.a`
   display: inline;
   color: var(--link-color);
   fill: currentColor;
@@ -49,39 +49,34 @@ const MobileNavMenuToggle = styled.a`
   }
 `;
 
-class Header extends Component {
-  state = {
-    showMobileNavMenu: false
-  }
+const Header = props => {
+  const [showMobileSiteNav, setShowMobileSiteNav] = useState(false);
 
-  mobileNavMenuHandler = () => {
-    this.setState(prevState => {
-      return { showMobileNavMenu: !prevState.showMobileNavMenu };
-    });
+
+  const mobileSiteNavHandler = () => {
+    setShowMobileSiteNav(!showMobileSiteNav);
   };
 
-  render() {  
-    return (
-      <>
-        <MobileSiteNav show={this.state.showMobileNavMenu} closed={this.mobileNavMenuHandler} />
-        <SiteHeader>
-          <SiteTitle>
-            <SiteTitleLink fade duration={.4} to="/">
-              {this.props.siteTitle}
-            </SiteTitleLink>
-          </SiteTitle>
-          <SiteNav />
-          <MobileNavMenuToggle onClick={this.mobileNavMenuHandler}>
-            <svg viewBox="0 0 100 80" width="30" height="30">
-              <rect width="100" height="5"></rect>
-              <rect y="30" width="100" height="5"></rect>
-              <rect y="60" width="100" height="5"></rect>
-            </svg>
-          </MobileNavMenuToggle>
-        </SiteHeader>
-      </>
-    );
-  }
+  return (
+    <>
+      <MobileSiteNav show={showMobileSiteNav} closed={mobileSiteNavHandler} />
+      <SiteHeader>
+        <SiteTitle>
+          <SiteTitleLink fade duration={.4} to="/">
+            {props.siteTitle}
+          </SiteTitleLink>
+        </SiteTitle>
+        <SiteNav />
+        <MobileSiteNavToggle onClick={mobileSiteNavHandler}>
+          <svg viewBox="0 0 100 80" width="30" height="30">
+            <rect width="100" height="5"></rect>
+            <rect y="30" width="100" height="5"></rect>
+            <rect y="60" width="100" height="5"></rect>
+          </svg>
+        </MobileSiteNavToggle>
+      </SiteHeader>
+    </>
+  );
 }
 
 Header.propTypes = {
