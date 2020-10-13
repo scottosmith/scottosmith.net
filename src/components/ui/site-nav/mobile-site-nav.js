@@ -9,7 +9,7 @@ const SideMenu = styled.div`
   position: fixed;
   width: 160px;
   max-width: 70%;
-  height: 100%;
+  height: 225px;
   right: 0;
   top: 0;
   z-index: 200;
@@ -17,17 +17,18 @@ const SideMenu = styled.div`
   padding: 32px 16px;
   box-sizing: border-box;
   transition: transform 0.2s ease-out;
+  border-radius: 0 0 0 24px;
 
   @media(min-width: 768px) {
     display: none;
   }
 
   &.open { 
-    transform: translateX(0);
+    transform: translate(0, 0);
   }
 
   &.closed {
-    transform: translateX(100%);
+    transform: translate(100%, -50%);
   }
 `;
 
@@ -36,7 +37,7 @@ const MobileNavMenu = props => {
     <>
       <Backdrop show={props.show} clicked={props.closed} />
       <SideMenu className={props.show ? 'open' : 'closed'}>
-        <SiteNav show={props.show.toString()} />
+        <SiteNav show={props.show} />
       </SideMenu>
     </>
   );

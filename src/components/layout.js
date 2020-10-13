@@ -10,7 +10,7 @@ import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
 
-import Header from './header'
+import Header from './header';
 import './layout.css';
 import ExLink from '../components/ui/ex-link';
 
@@ -23,7 +23,7 @@ const SiteWrapper = styled.div`
 const SiteFooter = styled.footer`
   margin-top: 1em;
   font-weight: bold;
-  text-shadow: .5px .5px #737373;
+  text-shadow: 0.5px 0.5px #737373;
 `;
 
 const PaddedLink = styled.span`
@@ -40,7 +40,7 @@ const Layout = ({ children }) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <>
@@ -48,7 +48,13 @@ const Layout = ({ children }) => {
         <Header siteTitle={data.site.siteMetadata.title} />
         <main>{children}</main>
         <SiteFooter>
-          © {new Date().getFullYear()} <PaddedLink><ExLink url="https://github.com/scottosmith">github</ExLink></PaddedLink> <PaddedLink><ExLink url="https://www.linkedin.com/in/sos314/">linkedin</ExLink></PaddedLink>
+          © {new Date().getFullYear()}{' '}
+          <PaddedLink>
+            <ExLink url="https://github.com/scottosmith">github</ExLink>
+          </PaddedLink>{' '}
+          <PaddedLink>
+            <ExLink url="https://www.linkedin.com/in/sos314/">linkedin</ExLink>
+          </PaddedLink>
         </SiteFooter>
       </SiteWrapper>
     </>
@@ -57,6 +63,6 @@ const Layout = ({ children }) => {
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
-}
+};
 
 export default Layout;
