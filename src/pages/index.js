@@ -1,5 +1,5 @@
 import React from 'react';
-import { useStaticQuery, graphql } from "gatsby"
+import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 import styled from 'styled-components';
 
@@ -8,22 +8,19 @@ import Layout from '../components/layout';
 import SEO from '../components/seo';
 import ExLink from '../components/ui/ex-link';
 
-const PaddedList = styled.div`
-  margin-left: .5em;
-`;
-
 const Avatar = styled(Img)`
-  border-radius: 50%;
+  border-radius: 24px 4px;
   width: 200px;
   border: 1.5px solid var(--img-border);
   margin-bottom: 1rem;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     margin-bottom: auto;
+    margin-right: 1.5rem;
   }
 `;
 
-const IntroSection = styled.div`
+const Section = styled.div`
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -32,7 +29,7 @@ const IntroSection = styled.div`
   width: 100%;
   margin-bottom: 2rem;
 
-  @media (min-width: 425px) {
+  @media (min-width: 768px) {
     flex-flow: row nowrap;
     margin-right: 0;
   }
@@ -41,17 +38,20 @@ const IntroSection = styled.div`
     margin: 0;
     text-align: center;
 
-    @media (min-width: 425px) {
-      text-align: right;
-      margin-left: 1rem;
+    @media (min-width: 768px) {
+      text-align: left;
     }
   }
+`;
+
+const IntroTxt = styled.span`
+  font-size: 3rem;
 `;
 
 const IndexPage = () => {
   const data = useStaticQuery(graphql`
     query {
-      placeholderImage: file(relativePath: { eq: "me.png" }) {
+      avatar: file(relativePath: { eq: "me.png" }) {
         childImageSharp {
           fluid(maxWidth: 200, quality: 100) {
             ...GatsbyImageSharpFluid
@@ -66,36 +66,28 @@ const IndexPage = () => {
     <Layout>
       <SEO title='Home' />
       <Card>
-        <IntroSection>
+        <Section>
           <div>
-            <Avatar title='Me!' alt='Me!' fluid={data.placeholderImage.childImageSharp.fluid} />
+            <Avatar title='Me!' alt='Me!' fluid={data.avatar.childImageSharp.fluid} />
           </div>
           <p>
-            Hello! I'm Scott Smith and this is my portfolio. I'm a full stack developer, but with a particular love of all things front end. 
-            Having a direct influence on the user experience and being able to build the interfaces that connect people to services are what 
-            drive me to keep learning, experimenting, and growing. Over 15 years in the development world and there's still so much to learn!
+            <IntroTxt>I'm Scott Smith.</IntroTxt><br />
+            I'm a full stack developer with a strong emphasis on the front end. 
+            Having a direct influence on the user experience and building the interfaces that connect people to services are what 
+            drive me to keep learning, experimenting, and growing. Over 15 years in the development world and there's always more to learn.
           </p>
-        </IntroSection>
-        <PaddedList>
-          <h3>Things I've been getting more familiar with:</h3>
-          <ul>
-            <li><ExLink url="https://nextjs.org/">Next.js</ExLink></li>
-            <li><ExLink url="https://graphql.org/">GraphQL</ExLink></li>
-            <li><ExLink url="https://styled-components.com/">Styled Components</ExLink></li>
-            <li><ExLink url="https://tailwindcss.com/">Tailwind CSS</ExLink></li>
-            <li><ExLink url="https://fujifilm-x.com/global/products/cameras/x100f/">My Fuji X100F</ExLink></li>
-          </ul>
-        </PaddedList>
-        <PaddedList>
-          <h3>A few inspirational tech people:</h3>
-          <ul>
-            <li><ExLink url="https://nerdy.dev/">Adam Argyle</ExLink></li>
-            <li><ExLink url="https://compiled.blog/">Emma Bostian</ExLink></li>
-            <li><ExLink url="https://angiejones.tech/">Angie Jones</ExLink></li>
-            <li><ExLink url="https://twitter.com/dan_abramov">Dan Abramov</ExLink></li>
-            <li><ExLink url="https://www.jamesqquick.com/">James Q. Quick</ExLink></li>
-          </ul>
-        </PaddedList>
+        </Section>
+        <Section>
+          <p>
+            These days, I've been spending my time with <ExLink url="https://reactjs.org/">React</ExLink> (a JavaScript library),&nbsp;
+            <ExLink url="https://nextjs.org/">Next.js</ExLink> (a React-based framework), and&nbsp;
+            <ExLink url="https://styled-components.com/">Styled Components</ExLink> (a tool for styling components in a clean and reusable way). 
+            I've recently been learning more about <ExLink url="https://tailwindcss.com/">Tailwind CSS</ExLink>, a CSS framework. 
+            This small group of tools gives you endless possibilities for building intuitive user experiences. Combine this with the growing 
+            serverless/cloud-computing platforms like <ExLink url="https://aws.amazon.com/">AWS</ExLink> or <ExLink url="https://firebase.google.com/">Firebase</ExLink> and 
+            you've got everything you need to build a scalable application that's built for a real-world environment right out of the gate.
+          </p>
+        </Section>
       </Card>
     </Layout>
   );
