@@ -3,7 +3,9 @@
   --bg-color: #303030;
   --link-color: #fffcf2;
   --site-width: 960px;
+  --break-point: 768px;
   --img-border: #2e2e2e;
+  --line-height: 1.2;
 }
 
 html {
@@ -35,7 +37,7 @@ body {
   -webkit-font-feature-settings: "kern", "liga", "clig", "calt";
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  line-height: 1.1;
+  line-height: var(--line-height);
 }
 
 a {
@@ -257,7 +259,7 @@ h1 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 2.25rem;
-  line-height: 1.1;
+  line-height: var(--line-height);
 }
 h2 {
   margin-left: 0;
@@ -274,7 +276,7 @@ h2 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.62671rem;
-  line-height: 1.1;
+  line-height: var(--line-height);
 }
 h3 {
   margin-left: 0;
@@ -291,7 +293,7 @@ h3 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1.38316rem;
-  line-height: 1.1;
+  line-height: var(--line-height);
 }
 h4 {
   margin-left: 0;
@@ -308,7 +310,7 @@ h4 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 1rem;
-  line-height: 1.1;
+  line-height: var(--line-height);
 }
 h5 {
   margin-left: 0;
@@ -325,7 +327,7 @@ h5 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.85028rem;
-  line-height: 1.1;
+  line-height: var(--line-height);
 }
 h6 {
   margin-left: 0;
@@ -342,7 +344,7 @@ h6 {
   font-weight: bold;
   text-rendering: optimizeLegibility;
   font-size: 0.78405rem;
-  line-height: 1.1;
+  line-height: var(--line-height);
 }
 hgroup {
   margin-left: 0;

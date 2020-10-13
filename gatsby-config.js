@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'Scott O. Smith',
-    description: 'My Personal Development Portfolio',
+    description: 'My Personal Portfolio',
     author: 'Scott O. Smith',
   },
   plugins: [
