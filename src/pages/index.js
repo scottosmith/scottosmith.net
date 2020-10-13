@@ -72,7 +72,7 @@ const IndexPage = () => {
           </div>
           <p>
             <IntroTxt>I'm Scott Smith.</IntroTxt><br />
-            I'm a full stack developer with a strong emphasis on the front end. 
+            I'm a full stack developer with an emphasis on the front end. 
             Having a direct influence on the user experience and building the interfaces that connect people to services are what 
             drive me to keep learning, experimenting, and growing. Over 15 years in the development world and there's always more to learn.
           </p>
