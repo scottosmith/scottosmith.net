@@ -6,7 +6,6 @@ const SiteNavContainer = styled.div`
   text-align: right;
   margin-right: 0;
   align-items: flex-end;
-  height: 100%;
 
   @media(min-width: 768px) {
     display: flex;
