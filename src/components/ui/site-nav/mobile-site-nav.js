@@ -7,7 +7,7 @@ import Backdrop from '../backdrop';
 
 const SideMenu = styled.div`
   position: fixed;
-  width: 160px;
+  width: 120px;
   max-width: 70%;
   height: 225px;
   right: 0;
@@ -19,11 +19,11 @@ const SideMenu = styled.div`
   transition: transform 0.2s ease-out;
   border-radius: 0 0 0 24px;
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     display: none;
   }
 
-  &.open { 
+  &.open {
     transform: translate(0, 0);
   }
 
@@ -45,11 +45,11 @@ const MobileSiteNav = props => {
 
 MobileSiteNav.propTypes = {
   show: PropTypes.bool,
-  closed: PropTypes.func
-}
+  closed: PropTypes.func,
+};
 
 MobileSiteNav.defaultProps = {
-  show: 'false'
-}
+  show: 'false',
+};
 
 export default MobileSiteNav;
