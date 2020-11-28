@@ -14,7 +14,7 @@ const Projects = () => {
       <CardContainer>
         <p>
           All projects built, deployed, and hosted on{' '}
-          <ExLink url="https://www.netlify.com/">Netlify</ExLink>.
+          <ExLink url="https://vercel.com">Vercel</ExLink>.
         </p>
         <Card>
           <Project
