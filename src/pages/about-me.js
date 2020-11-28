@@ -6,6 +6,7 @@ import styled from 'styled-components';
 import Card from '../components/ui/cards/card';
 import Layout from '../components/layout';
 import SEO from '../components/seo';
+import ExLink from '../components/ui/ex-link';
 
 const AboutImg = styled(Img)`
   margin: 1em auto;
@@ -54,12 +55,13 @@ const AboutMe = () => {
           fluid={data.about1.childImageSharp.fluid}
         />
         <p>
-          I take pictures, I travel, I code, I make music. I spend life with my
-          best friend and partner, Maura. My dog Rhonda is the coolest thing on
-          this here planet Earth. I love my motorcycle, can't get enough of my
-          van, and am working on getting my private pilot license. I'm endlessly
-          scouting the world around me for all the nooks and crannies that the
-          rest of the world hasn't noticed yet.
+          I <ExLink url="https://blog.scottosmith.net">take pictures</ExLink>, I
+          travel, I code, I make music. I spend life with my best friend and
+          partner, Maura. My dog Rhonda is the coolest thing on this here planet
+          Earth. I love my motorcycle, can't get enough of my van, and am
+          working on getting my private pilot license. I'm endlessly scouting
+          the world around me for all the nooks and crannies that the rest of
+          the world hasn't noticed yet.
         </p>
         <AboutImg
           title="On a mountain"
