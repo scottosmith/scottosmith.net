@@ -70,7 +70,7 @@ const Projects = () => {
             <ExLink url="https://styled-components.com/">
               Styled Components
             </ExLink>
-            , something I am THOROUGHLY enjoying using.
+            , something I am THOROUGHLY enjoying using.{' '}
             <ExLink url="https://jamstack.org/">Jamstack</ExLink> is great!
           </Project>
         </Card>
