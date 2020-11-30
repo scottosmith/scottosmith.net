@@ -27,11 +27,12 @@ const Projects = () => {
             wanted an easy way to search through Craigslist and add items to
             different lists, sort of like a shopping list. I tend to compare ads
             when looking for certain things and this makes it easier to keep
-            track of the different ones I'm interested in.{' '}
-            <ExLink url="https://reactjs.org">React</ExLink> and{' '}
+            track of the different ones I'm interested in. I used{' '}
+            <ExLink url="https://reactjs.org">React</ExLink>,{' '}
             <ExLink url="https://styled-components.com/">
               Styled Components
-            </ExLink>{' '}
+            </ExLink>
+            , and <ExLink url="https://firebase.google.com/">Firebase</ExLink>{' '}
             for this one. This has been a fun project to work on!
           </Project>
         </Card>
