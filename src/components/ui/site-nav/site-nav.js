@@ -34,7 +34,7 @@ const SiteNav = props => (
       Blog
     </SiteNavItem>
     <SiteNavItem
-      href="https://drive.google.com/file/d/1I-ybvpgVx-4JwiT5jgsOLEGandAfTGDt/view?usp=sharing"
+      href="https://docs.google.com/document/d/1hPgnTDeLmWb7YXtHA4vODtG2EmZg0V7dv3uGYOsBd6M/edit?usp=sharing"
       target="_blank"
       rel="noreferrer"
       show={props.show.toString()}
