@@ -6567,6 +6567,11 @@ follow-redirects@1.5.10, follow-redirects@^1.0.0:
   dependencies:
     debug "=3.1.0"
 
+fontsource-source-sans-pro@^3.0.9:
+  version "3.0.9"
+  resolved "https://registry.yarnpkg.com/fontsource-source-sans-pro/-/fontsource-source-sans-pro-3.0.9.tgz#793f426a598564961b21b913d6d32480a3484213"
+  integrity sha512-kBwOSHXR/P+oTGCdemcJM9Z7jYK1O0h+aeqq60fajP/HvhYJWTVBA1ZmKlOX+rHPARLRgfwCv6B4m1UC7bHsoA==
+
 for-in@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/for-in/-/for-in-1.0.2.tgz#81068d295a8142ec0ac726c6e2200c30fb6d5e80"

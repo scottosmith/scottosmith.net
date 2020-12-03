@@ -25,6 +25,7 @@ html {
   box-sizing: inherit;
 }
 body {
+  font-family: "Source Sans Pro";
   background-color: var(--bg-color);
   color: var(--main-color);  
   margin: 0;

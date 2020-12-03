@@ -9,6 +9,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
+import 'fontsource-source-sans-pro/400.css';
+import 'fontsource-source-sans-pro/700.css';
 
 import Header from './header';
 import './layout.css';
