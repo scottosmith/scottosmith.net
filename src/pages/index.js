@@ -39,17 +39,19 @@ const Section = styled.div`
   }
 `;
 
-const IntroTxt = styled.div`
+const IntroTxt = styled.span`
   font-size: 2rem;
   text-align: center;
   width: 100%;
   display: block;
+  padding-bottom: 0.75rem;
 
   @media (min-width: 768px) {
-      font-size: 3rem;
-      text-align: left;
-      display: inline-block;
-    }
+    font-size: 3rem;
+    text-align: left;
+    display: inline-block;
+    padding-bottom: 0;
+  }
 `;
 
 const IndexPage = () => {
@@ -80,7 +82,6 @@ const IndexPage = () => {
           </div>
           <p>
             <IntroTxt>I'm Scott Smith.</IntroTxt>
-            <br />
             I'm a full stack developer with an emphasis on the front end. Having
             a direct influence on the user experience and building the
             interfaces that connect people to services are what drive me to keep
